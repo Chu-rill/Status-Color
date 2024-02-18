@@ -1,6 +1,6 @@
 * {
-  /* padding: 0;
-  margin: 0; */
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 body {
@@ -22,4 +22,102 @@ nav li:nth-child(2) {
 nav ul {
   display: flex;
   justify-content: space-between;
+}
+.status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#icon {
+  color: white;
+  font-size: 1.5rem;
+}
+.user img {
+  width: 80px;
+  height: 100%;
+  border-radius: 100%;
+}
+.user {
+  display: flex;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.user h1 {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.text {
+  margin-left: 10px;
+}
+main {
+  padding: 7px;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100vh;
+  background-color: red;
+  display: none;
+}
+.sect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.cover input {
+  background-color: inherit;
+  border: none;
+  font-size: 2rem;
+  padding-left: 200px;
+}
+.cover input:focus {
+  outline: none;
+}
+#button1 {
+  width: 80px;
+  height: 80px;
+  background-color: gray;
+  border-radius: 25px;
+  position: absolute;
+  top: 85%;
+  left: 75%;
+  border: none;
+}
+#button1:hover {
+  background-color: color-mix(in srgb, black, white 15%);
+  cursor: pointer;
+}
+#button2 {
+  width: 80px;
+  height: 80px;
+  background-color: none;
+  border: none;
+  border-radius: 25px;
+  background-color: inherit;
+  position: absolute;
+  top: 20px;
+  left: 75%;
+  display: none;
+}
+#button2:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#button3 {
+  width: 80px;
+  height: 80px;
+  background-color: none;
+  border: none;
+  border-radius: 25px;
+  background-color: inherit;
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  display: none;
+}
+#button3:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }

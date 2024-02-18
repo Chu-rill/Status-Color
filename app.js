@@ -107,3 +107,34 @@ const colors = [
   "#FFFFF0",
   "#FAEBD7",
 ];
+let button1 = document.querySelector("#button1");
+let button2 = document.querySelector("#button2");
+let button3 = document.querySelector("#button3");
+let cover = document.querySelector(".cover");
+
+// let randIndex = Math.floor(Math.random() * colors.length);
+// let randColor = colors[randIndex];
+function getRandomColor() {
+  let randIndex = Math.floor(Math.random() * colors.length);
+  return colors[randIndex];
+  console.log(randColor);
+}
+
+button1.addEventListener("click", () => {
+  console.log("Button clicked");
+  cover.style.width = "100vw";
+  cover.style.display = "block";
+  button2.style.display = "block";
+  button3.style.display = "block";
+  button1.style.display = "none";
+});
+button3.addEventListener("click", () => {
+  cover.style.width = "0";
+  cover.style.display = "none";
+  button2.style.display = "none";
+  button3.style.display = "none";
+  button1.style.display = "block";
+});
+button2.addEventListener("click", () => {
+  cover.style.backgroundColor = getRandomColor();
+});
